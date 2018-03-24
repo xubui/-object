@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.rota{
+    width: 500px;
+    height: 500px;
+    background-color:darkorange;
+    border-radius:30%;
+}
+.T{
+    animation:my 10s linear infinite;
+    animation-play-state:paused;
+}
+.stop{
+    animation-play-state: running;
+}
+@keyframes my {
+
+    from{ transform:rotate(0deg)}
+
+    to{transform:rotate(360deg)}
+
+
+}

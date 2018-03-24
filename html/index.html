@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <script src="../jq/jquery.min.js"></script>
+</head>
+<link rel="stylesheet" href="../css/index.css">
+<body>
+<div class="rota T"></div>
+<input type="button" value="开始" id="b1">
+<input type="button" value="停止" id="b2">
+<script>
+    $("#b1").click(function (e) {
+
+    if($(".rota").attr("class") == "rota"){$(".rota").attr("class","rota T")}
+    $(".rota").toggleClass("stop");
+    if(e.target.value == "开始"){e.target.value ="暂停"}else {e.target.value = "开始"}
+});
+
+    $("#b2").click(function () {
+        $(".rota").attr("class","rota");
+    })
+</script>
+
+</body>
+</html>
